@@ -89,9 +89,9 @@ int main(int argc, char* argv[]){
     omp_set_dynamic(0);
     omp_set_num_threads(threads);
 
-    printf("\nINITIALISATION\n");
+    printf("INITIALISATION\n");
     printf("\tNumber of processors available = %d\n", omp_get_num_procs());
-    printf("\tNumber of threads =              %d\n", omp_get_max_threads());
+    printf("\tNumber of threads =              %d\n\n", omp_get_max_threads());
 
     sieveSize = N - M + 1;
     primeRangeToSearch = sqrt(N) + 1;
